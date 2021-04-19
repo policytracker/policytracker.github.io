@@ -59,7 +59,7 @@ function createMap(selectedValue) {
 
 function createTable(selectedValue) {
   //Map
-  var queryString = encodeURIComponent(`SELECT A, E, D WHERE C = "${selectedValue}"`);
+  var queryString = encodeURIComponent(`SELECT F, E, D WHERE C = "${selectedValue}"`);
 
   var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1pTAjeDtAbmyEZFb2pi5mzQEjSR-T6RlN4nGTud7KAeM/gviz/tq?sheet=Data&headers=1&tq=' + queryString);
   query.send(drawTable);
